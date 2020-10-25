@@ -15,7 +15,7 @@ class BuilderTableCreateIpricegroupOcapipluginResources extends Migration
             $table->increments('id')->unsigned();
             $table->string('base_endpoint');
             $table->string('model_class');
-            $table->json('eager_load');
+            $table->string('eager_load');
             $table->boolean('is_auth_required')->default(false);
             $table->timestamp('created_at')->nullable();
             $table->timestamp('updated_at')->nullable();
